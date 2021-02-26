@@ -1,0 +1,126 @@
+<html>
+<head>
+    <title>Currency Converter</title>
+    <style type=></style>
+</head>
+<style>
+body{
+	background-image:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.5)), url(bg.jpg);
+	height: 650px;
+	width: 1330px;
+	background-size: cover;
+	background-position: center;
+}
+h1{
+	font-size: 80px;
+	text-align: right;
+	color: #23B613;
+	margin-right: 220px;
+}
+img{
+	float: left;
+	height: auto;
+	width: 50px;
+
+}	
+marquee{
+	font-size: 50px;
+	color: #94F24C;
+}
+
+fieldset{
+    width: 60%;
+	margin: auto;
+	border: 5px solid #A6821D;
+	text-align: left;
+	font-size: 20px;
+	font-family: lato,sans-serif;
+}
+
+input[type=number],[id]{
+    background: #67A160;
+	border: 1px solid #000;
+	border-radius: 10px;
+	border-width: 2px;
+	color: #36454b;
+	font-size: 15px;
+	margin: 5px;
+	padding: 8px;
+	display: inline-block;
+}
+
+input[type=button]{
+    width: 80px;
+	height: 43px;
+	font-weight: bold;
+	background-color: red;
+	font-size: 18px;
+}
+
+input[type=reset]{
+    width: 95px;
+	height: 43px;
+	font-weight: bold;
+}
+label{
+	color: #CAF90D;
+}
+</style>
+
+<script>
+function currencyConverter(valNum){
+if(converter.taka.value <= 0)
+window.alert("Enter Value Greaterthan 0");
+else{
+
+document.getElementById("dollar").value = (valNum/84.87).toFixed(2);
+document.getElementById("rupee").value = (valNum/0.86).toFixed(2);
+document.getElementById("euro").value = (valNum/102.85).toFixed(2);
+document.getElementById("yean").value = (valNum/1.25).toFixed(2);
+document.getElementById("ruble").value = (valNum/0.87).toFixed(2);
+}
+}
+</script>
+
+<body>
+<marquee>"An Investment is known pays the best interest." - Benjamin Franklin</marquee>
+<h1>Easy Currency Converter</h1>
+<form name="converter">
+<fieldset>
+<label>Bangladeshi Currency(Taka):</label>
+&nbsp&nbsp&nbsp&nbsp
+<input type="number" name="taka" required style="color: white;">
+ 
+<input type="button" value="Convert" onclick="currencyConverter(converter.taka.value)"><br>
+<hr>
+
+<label>USD-US Dollar</label>
+<input id="dollar" style="color: white;">
+
+<label>INR-Indian Rupee</label>
+
+<input id="rupee" style="color: white;">
+
+<label>EUR-Euro</label>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+<input id="euro" style="color: white;">
+
+<label>JPY-Japanese Yen</label>
+<input id="yean" style="color: white;">
+
+<label>RUB-Russian Ruble</label>
+
+<input id="ruble" style="color: white;"><br>
+<input type="reset" value="Again">
+
+</fieldset>
+</form>
+</body>
+&nbsp &nbsp &nbsp &nbsp &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+&nbsp &nbsp &nbsp &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp&nbsp&nbsp &nbsp&nbsp&nbsp &nbsp&nbsp&nbsp &nbsp&nbsp&nbsp &nbsp&nbsp&nbsp
+
+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp&nbsp&nbsp
+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp&nbsp 
+
+</html>
